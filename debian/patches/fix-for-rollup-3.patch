@@ -1,0 +1,106 @@
+Description: fix for rollup 3
+Author: Yadd <yadd@debian.org>
+Bug-Debian: https://bugs.debian.org/1022591
+Forwarded: not-needed
+Last-Update: 2022-10-24
+
+--- a/jridgewell-gen-mapping/rollup.config.js
++++ b/jridgewell-gen-mapping/rollup.config.js
+@@ -1,4 +1,4 @@
+-import typescript from '@rollup/plugin-typescript';
++const typescript = require('@rollup/plugin-typescript');
+ 
+ function configure(esm) {
+   return {
+@@ -29,4 +29,4 @@
+   };
+ }
+ 
+-export default [configure(false), configure(true)];
++module.exports = [configure(false), configure(true)];
+--- a/jridgewell-resolve-uri/rollup.config.js
++++ b/jridgewell-resolve-uri/rollup.config.js
+@@ -1,4 +1,4 @@
+-import typescript from '@rollup/plugin-typescript';
++const typescript = require('@rollup/plugin-typescript');
+ 
+ function configure(esm) {
+   return {
+@@ -24,4 +24,4 @@
+   };
+ }
+ 
+-export default [configure(false), configure(true)];
++module.exports = [configure(false), configure(true)];
+--- a/jridgewell-set-array/rollup.config.js
++++ b/jridgewell-set-array/rollup.config.js
+@@ -1,4 +1,4 @@
+-import typescript from '@rollup/plugin-typescript';
++const typescript = require('@rollup/plugin-typescript');
+ 
+ function configure(esm) {
+   return {
+@@ -24,4 +24,4 @@
+   };
+ }
+ 
+-export default [configure(false), configure(true)];
++module.exports = [configure(false), configure(true)];
+--- a/jridgewell-source-map/rollup.config.js
++++ b/jridgewell-source-map/rollup.config.js
+@@ -1,5 +1,5 @@
+-import typescript from '@rollup/plugin-typescript';
+-import { nodeResolve } from '@rollup/plugin-node-resolve';
++const typescript = require('@rollup/plugin-typescript');
++const { nodeResolve } = require('@rollup/plugin-node-resolve');
+ 
+ function configure(esm) {
+   return {
+@@ -31,4 +31,4 @@
+   };
+ }
+ 
+-export default [configure(false), configure(true)];
++module.exports = [configure(false), configure(true)];
+--- a/jridgewell-sourcemap-codec/rollup.config.js
++++ b/jridgewell-sourcemap-codec/rollup.config.js
+@@ -1,4 +1,4 @@
+-import typescript from '@rollup/plugin-typescript';
++const typescript = require('@rollup/plugin-typescript');
+ 
+ function configure(esm) {
+   return {
+@@ -31,4 +31,4 @@
+   };
+ }
+ 
+-export default [configure(false), configure(true)];
++module.exports = [configure(false), configure(true)];
+--- a/jridgewell-trace-mapping/rollup.config.js
++++ b/jridgewell-trace-mapping/rollup.config.js
+@@ -1,4 +1,4 @@
+-import typescript from '@rollup/plugin-typescript';
++const typescript = require('@rollup/plugin-typescript');
+ 
+ function configure(esm) {
+   return {
+@@ -33,4 +33,4 @@
+   };
+ }
+ 
+-export default [configure(false), configure(true)];
++module.exports = [configure(false), configure(true)];
+--- a/rollup.config.js
++++ b/rollup.config.js
+@@ -1,4 +1,4 @@
+-import typescript from '@rollup/plugin-typescript';
++const typescript = require('@rollup/plugin-typescript');
+ 
+ function configure(esm) {
+   return {
+@@ -23,4 +23,4 @@
+   };
+ }
+ 
+-export default [configure(false), configure(true)];
++module.exports = [configure(false), configure(true)];

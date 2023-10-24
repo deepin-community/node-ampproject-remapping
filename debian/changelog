@@ -1,5 +1,64 @@
-template-repository (1.0-1) unstable; urgency=medium
+node-ampproject-remapping (2.2.0+~cs5.15.37-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream version 2.2.0+~cs5.15.37, updates
+    + @jridgewell/resolve-uri from 3.0.8 to 3.1.0
+    + @jridgewell/trace-mapping from 0.3.14 to 0.3.17
+  * Fix rollup config for rollup 3 (Closes: #1022591)
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Yadd <yadd@debian.org>  Mon, 24 Oct 2022 18:20:36 +0200
+
+node-ampproject-remapping (2.2.0+~cs5.14.42-1) unstable; urgency=medium
+
+  * New upstream version 2.2.0+~cs5.14.42
+
+ -- Yadd <yadd@debian.org>  Thu, 30 Jun 2022 06:50:43 +0200
+
+node-ampproject-remapping (2.2.0+~cs5.14.37-1) unstable; urgency=medium
+
+  * Declare compliance with policy 4.6.1
+  * Embed @jridgewell/source-map
+
+ -- Yadd <yadd@debian.org>  Tue, 31 May 2022 07:38:30 +0200
+
+node-ampproject-remapping (2.2.0+~cs5.10.26-1) unstable; urgency=medium
+
+  * Apply multi-arch hints (foreign)
+  * Drop tsc patch
+  * Embed @jridgewell/gen-mapping and @jridgewell/set-array
+  * New upstream version 2.2.0+~cs5.10.26
+  * Add patch for @jridgewell/gen-mapping 0.2.0
+  * Update build
+
+ -- Yadd <yadd@debian.org>  Fri, 29 Apr 2022 08:22:36 +0200
+
+node-ampproject-remapping (2.1.2+~cs4.7.20-1) unstable; urgency=medium
+
+  * New upstream version 2.1.2+~cs4.7.20
+  * Update tsc patch
+  * Update lintian overrides
+
+ -- Yadd <yadd@debian.org>  Thu, 17 Feb 2022 09:50:47 +0100
+
+node-ampproject-remapping (2.0.4+~cs4.7.16-4) unstable; urgency=medium
+
+  * Source-only upload
+
+ -- Yadd <yadd@debian.org>  Wed, 09 Feb 2022 17:05:15 +0100
+
+node-ampproject-remapping (2.0.4+~cs4.7.16-3) unstable; urgency=medium
+
+  * Fix description
+
+ -- Yadd <yadd@debian.org>  Sun, 06 Feb 2022 10:34:10 +0100
+
+node-ampproject-remapping (2.0.4+~cs4.7.16-2) unstable; urgency=medium
+
+  * Update copyright
+
+ -- Yadd <yadd@debian.org>  Sun, 06 Feb 2022 10:28:05 +0100
+
+node-ampproject-remapping (2.0.4+~cs4.7.16-1) unstable; urgency=medium
+
+  * Initial release (Closes: #1005026)
+
+ -- Yadd <yadd@debian.org>  Sat, 05 Feb 2022 19:20:20 +0100

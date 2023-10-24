@@ -1,0 +1,5 @@
+# Match jridgewell-*/*
+add-component-copyright jridgewell-* *
+# Test data
+source-contains-prebuilt-javascript-object *test/samples/*.min.js*
+very-long-line-length-in-source-file *test/samples/*.map*

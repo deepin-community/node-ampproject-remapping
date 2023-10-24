@@ -1,0 +1,3 @@
+pkgjs-ln @types/node
+rollup -c
+tsc -p tsconfig.build.json
