@@ -1,0 +1,4 @@
+jest-diff
+pretty-format
+ts-jest		test
+@types/jest	test

@@ -1,0 +1,49 @@
+version=4
+opts=\
+ctype=nodejs,\
+repacksuffix=+dfsg,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-ampproject-remapping-$1/ \
+ https://github.com/ampproject/remapping/tags .*/archive.*/v?([\d\.]+).tar.gz group
+
+opts=\
+component=jridgewell-gen-mapping,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-gen-mapping-$1/ \
+ https://github.com/jridgewell/gen-mapping/tags .*/archive.*/v?([\d\.]+).tar.gz checksum
+
+opts=\
+component=jridgewell-resolve-uri,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-resolve-uri-$1/ \
+ https://github.com/jridgewell/resolve-uri/tags .*/archive.*/v?([\d\.]+).tar.gz checksum
+
+opts=\
+component=jridgewell-set-array,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-set-array-$1/ \
+ https://github.com/jridgewell/set-array/tags .*/archive.*/v?([\d\.]+).tar.gz checksum
+
+opts=\
+component=jridgewell-sourcemap-codec,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-sourcemap-codec-$1/ \
+ https://github.com/jridgewell/sourcemap-codec/tags .*/archive.*/v?([\d\.]+).tar.gz checksum
+
+opts=\
+component=jridgewell-trace-mapping,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-trace-mapping-$1/ \
+ https://github.com/jridgewell/trace-mapping/tags .*/archive.*/v?([\d\.]+).tar.gz checksum
+
+opts=\
+component=jridgewell-source-map,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-source-map-$1/ \
+ https://github.com/jridgewell/source-map/tags .*/archive.*/v?([\d\.]+).tar.gz checksum
